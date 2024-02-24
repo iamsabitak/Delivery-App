@@ -1,0 +1,153 @@
+body,
+html {
+  background: #f6f5f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #092443;
+}
+/* (max-width: 768px) */
+
+@media only screen and (min-device-width: 375px) {
+  .navcontainer {
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 110px;
+  }
+  .imgforarrow {
+    color: #323232;
+  }
+  .deliverySummary {
+    color: #092443;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .item {
+    color: #27a8a1;
+    padding-right: 1.3rem;
+    font-size: 14px;
+  }
+  .cardtextandtimer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 9px;
+  }
+  .cardtext {
+    /* padding-top: 10px; */
+    color: #092443;
+    font-weight: bold;
+  }
+  .CitynameAnduser {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 1rem;
+  }
+  .cityandusername {
+    max-width: 315px;
+    max-height: 68px;
+    color: #5b5b5b;
+    background-color: #ffffff;
+    font-size: 16px;
+    border-right: 1px solid #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .card {
+    border: 1px solid #f0f0f8;
+    box-shadow: 0 0 10px #d0d0d3;
+    border-radius: 17px;
+    max-width: 315px;
+    max-height: 189px;
+    margin: auto;
+    background: #f1f2f6;
+    margin-top: 10px;
+  }
+  .itemcontainer {
+    padding-top: 15px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .item1 {
+    color: #092443;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+    width: 351px;
+    height: 67px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #d0d0d3;
+  }
+  .itemquantity {
+    color: #8f92a1;
+    font-size: 12px;
+    margin-top: -6px;
+  }
+  .itemname {
+    font-size: 14px;
+  }
+  .buttons {
+    font-size: 16px;
+    color: #092443;
+    width: 69px;
+    height: 30px;
+    background: #ffffff;
+    border: 1px solid #8f92a1;
+    border-radius: 7px;
+  }
+  .AmonutConfirm {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .balance {
+    position: relative;
+    font-size: 16px;
+    color: #06d37d;
+    margin-left: 8rem;
+    font-weight: 500;
+  }
+
+  .balance::after {
+    content: "";
+    position: absolute;
+    top: -16px;
+    bottom: -16px;
+    left: -22px;
+    width: 0.4px;
+    background-color: #8f92a1;
+  }
+
+  .amountAndTax {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    width: 351px;
+    height: 71px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #d0d0d3;
+  }
+  .inclusivetax {
+    color: #596273;
+    font-size: 12px;
+    margin-top: -12px;
+  }
+  .confirmButton {
+    margin-top: 23px;
+    width: 345px;
+    height: 56px;
+    background: #f55951;
+    color: #ffffff;
+    border: 1px solid #f55951;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+}
