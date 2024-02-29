@@ -1,5 +1,5 @@
 import React from "react";
-import Arrowback from "./arrow_back.svg";
+import Arrowback from "../images/arrow_back.svg";
 
 function Navbar() {
   return (

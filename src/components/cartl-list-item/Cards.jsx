@@ -1,7 +1,7 @@
 import React from "react";
-import TimerShape from "./Group 756-2.svg";
-import Mapimg from "./Rectangle 536.svg";
-import EntypoLocation from "./entypo_location.svg";
+import TimerShape from "../images/Group 756-2.svg";
+import Mapimg from "../images/Rectangle 536.svg";
+import EntypoLocation from "../images/entypo_location.svg";
 
 function Cards() {
   return (

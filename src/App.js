@@ -1,16 +1,20 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Cards from "./Cards";
-import ListOrder from "./ListOrder";
-import Amount from "./Amount";
+
+import Login from "./loginpage/Login";
+
+import Home from "./components/Home";
+import { Routes, Route } from "react-router-dom";
+// import Menu from "./components/Menu";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Cards />
-      <ListOrder />
-      <Amount />
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
     </>
   );
 }

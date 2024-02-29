@@ -1,9 +1,9 @@
 import React from "react";
 import Items from "./item";
 
-import Item1 from "./Rectangle.svg";
-import Item2 from "./Rectangle-2.svg";
-import Item3 from "./Rectangle-3.svg";
+import Item1 from "../images/Rectangle.svg";
+import Item2 from "../images/Rectangle-2.svg";
+import Item3 from "../images/Rectangle-3.svg";
 
 function ListOrder() {
   return (
