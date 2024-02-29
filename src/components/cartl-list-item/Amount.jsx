@@ -4,7 +4,7 @@ function Amount() {
   return (
     <div className="AmonutConfirm">
       <div className="amountAndTax">
-        <ul style={{ marginLeft: "-1rem" }}>
+        <ul style={{ marginLeft: "-1rem", marginTop: "30px" }}>
           <p>Total Amount</p>
           <p className="inclusivetax">inclusive all taxes</p>
         </ul>
