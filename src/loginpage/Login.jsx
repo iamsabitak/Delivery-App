@@ -1,16 +1,30 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
-  const [email, setEmail] = useState("default@example.com");
-  const [password, setPassword] = useState("SSaa@@11");
+  const [email, setEmail] = useState("eve.holt@reqres.in");
+  const [password, setPassword] = useState("cityslicka");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
   const navigate = useNavigate();
 
-  const onSubmitHandler = (e) => {
+  const onSubmitHandler = async (e) => {
     e.preventDefault();
+    console.log({ email, password });
+    try {
+      const res = await axios.post("https://reqres.in/api/login", {
+        email: email,
+        password: password,
+      });
+      console.log("token:", res.data.token);
+      localStorage.setItem("token", res.data.token);
+      navigate("/home");
+    } catch (error) {
+      console.log("Error:", error);
+    }
+
     setEmailError("");
     setPasswordError("");
 
@@ -23,10 +37,6 @@ function Login() {
       setPasswordError("Password is required");
       return;
     }
-
-    // If validation passes, navigate to home
-    navigate("/home");
-    console.log(email, password);
   };
 
   return (
